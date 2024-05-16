@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PigeonTalk</title>
+	<style>
+
+		body{
+			background-image: url(bg.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			color: #a1a6ac;
+			font-family: helvetica;
+		}
+		table{
+			background: #313338;
+			border-radius: 10px;
+		}
+		.asterisk{
+			color: red;
+			font-size: 10px;
+		}
+		label{
+			font-size: 12px;
+			padding-left: 29px;
+		}
+		input, select{
+			background-color: #1e1f22;
+			color: #f2f3f5;
+			border-radius: 2px;
+		 	outline: none;
+		 	border-style: none;
+		 	font-size: 15px;
+		 	padding: 7px;
+		}
+		button{
+			background-color: #5865f2;
+  			border: none;
+  			color: #f2f3f5;
+  			padding: 10px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+  			cursor: pointer;
+  			border-radius: 4px;
+  			width: 380px;
+		}
+		.message{
+			font-size: 10px;
+		}
+
+	</style>
+
+	<link rel="icon" type="icon/png" href="icon.png">
+</head>
+<body>
+
+	<br>
+
+	<form onsubmit="showAlertAndNavigate(); return false;">
+		<table style="border= 1; border-collapse: collapse; margin: auto; width: 450px; border-spacing: 0;" cellpadding="5">
+			<tr>
+				<br><td align="center"><h2 style="color: #f2f3f5;"><b>Create an Account</b></h2></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<label>EMAIL<sup class="asterisk"> *</sup></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<input type="email" name="inputEmail" required="" style="width: 370px;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>DISPLAY NAME<sup class="asterisk"> *</sup></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<input type="text" name="inputDisplayName" required="" style="width: 370px;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>PASSWORD<sup class="asterisk"> *</sup></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<input type="password" name="inputPassword" required="" style="width: 370px;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>GENDER<sup class="asterisk"> *</sup></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<select required="" style="width: 380px;">
+						<option>Male</option>
+						<option>Female</option>
+						<option>Prefer not to say</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>DATE OF BIRTH<sup class="asterisk"> *</sup></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<input type="date" name="inputBirthDate" required="" style="width: 370px;">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>CONTACT NUMBER<sup class="asterisk"> *</sup></label>
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<input type="number" name="inputContact" required="" style="width: 370px;">
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center; padding: 19px;">
+            		<input type="checkbox" name="optionalCheckbox">
+            		<label class="message">(Optional) It's okay to send me emails with PigeonTalk updates, tips, and special offers. You can opt out at any time.</label>
+        		</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<a href="#" style="background-color: transparent; border-color: transparent; color: #f2f3f5; text-decoration: none;"><button>Continue</button></a>
+
+					<script>
+						function showAlertAndNavigate() {
+  						alert("Congratulations! Your sign-up was successful.");
+  						window.location.href = "handleLogin.html";
+						}
+					</script>
+
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center;">
+					<label class="message">By registering, you agree to PigeonTalk's Term of Service and Privacy Policy.</label>
+				</td>
+			</tr>
+			<tr><td></td></tr>
+		</table>
+	</form>
+
+</body>
+</html>
